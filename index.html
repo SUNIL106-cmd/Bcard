@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #121212;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+        }
+        .card {
+            width: 300px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: 70%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: none;
+        }
+        .btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🎉 Happy Birthday! 🎂</h2>
+        <p>"Wishing you all the happiness and success!"</p>
+        <img id="birthdayImage" src="shivi1.jpg" alt="Birthday Image">
+        <button class="btn" onclick="showImage()">Open Surprise</button>
+    </div>
+    
+    <script>
+        function showImage() {
+            document.getElementById('birthdayImage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
